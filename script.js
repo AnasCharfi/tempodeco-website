@@ -36,3 +36,20 @@ window.addEventListener('click',event=>{
   menu.classList.remove('open');
   burger?.setAttribute('aria-expanded','false');
 });
+
+const toTop=document.querySelector('.to-top');
+if(toTop){
+  const toggleToTop=()=>{
+    if(window.scrollY>320){
+      toTop.classList.add('visible');
+    }else{
+      toTop.classList.remove('visible');
+    }
+  };
+  toggleToTop();
+  window.addEventListener('scroll',toggleToTop,{passive:true});
+  toTop.addEventListener('click',()=>{ menu?.classList.remove('open'); burger?.setAttribute('aria-expanded','false'); });
+}
+
+
+
