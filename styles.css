@@ -118,13 +118,16 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .process__steps p{margin:4px 0 0;color:var(--muted)}
 
 .showcase{columns:3 300px;column-gap:18px}
-.shot{height:220px;border:1px solid color-mix(in oklab,var(--beige) 70%, white);border-radius:22px;margin:0 0 18px;break-inside:avoid;box-shadow:var(--shadow)}
+.shot{height:220px;border:1px solid color-mix(in oklab,var(--beige) 70%, white);border-radius:22px;margin:0 0 18px;break-inside:avoid;box-shadow:var(--shadow);overflow:hidden;position:relative}
+.shot img{width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit}
 .shot-soft{background:linear-gradient(160deg,#f9f2eb 0%,#ead4bf 60%,#f5e5d1 100%)}
 .shot-stone{background:linear-gradient(145deg,#d5d2cc 0%,#f1ede7 70%,#cbc6bf 100%)}
 .shot-tall{height:320px;background:linear-gradient(150deg,#e3e0dd 0%,#faf9f7 50%,#d1ccc6 100%)}
 .shot-wide{height:260px;background:linear-gradient(155deg,#e8dacd 0%,#fef4eb 60%,#f0dfcf 100%)}
 .shot-wood{background:linear-gradient(165deg,#d7b89c 0%,#f1dcc2 60%,#cda682 100%)}
 .shot-light{background:linear-gradient(170deg,#f6f0e8 0%,#efe2d4 60%,#fff8f1 100%)}
+.shot-marble{height:300px;background:linear-gradient(155deg,#e6ded5 0%,#f5eee6 55%,#d9cfc3 100%)}
+.shot-tall-alt{height:340px;background:linear-gradient(150deg,#ebdfd1 0%,#f8efe2 55%,#d7c8b7 100%)}
 
 .testimonial__card{max-width:720px;margin:auto;display:grid;gap:16px;padding:32px 36px}
 .testimonial__quote{margin:0;font-size:1.22rem;line-height:1.5;color:var(--ink-soft)}
